@@ -7,16 +7,16 @@
   <meta charset="utf-8">
   <title>Christy's Studio</title>
   <!-- Search Engine -->
-  <meta name="description" content="Foul language dictionary">
-  <meta name="image" content="https://christyc1129.github.io/startbootstrap-grayscale/slider/mf.jpg">
+  <meta name="description" content="Christy Cheung">
+  <meta name="image" content="https://christyc1129.github.io/startbootstrap-grayscale/slider/M/M1.jpg">
   <!-- Schema.org for Google -->
   <meta itemprop="name" content="Foul language dictionary">
   <meta itemprop="description" content="Foul language dictionary">
-  <meta itemprop="image" content="https://christyc1129.github.io/startbootstrap-grayscale/slider/mf.jpg">
+  <meta itemprop="image" content="https://christyc1129.github.io/startbootstrap-grayscale/slider/F/F1.jpg">
   <!-- Open Graph general (Facebook, Pinterest & Google+) -->
   <meta name="og:title" content="Foul language dictionary">
   <meta name="og:description" content="Foul language dictionary">
-  <meta name="og:image" content="https://christyc1129.github.io/startbootstrap-grayscale/slider/mf.jpg">
+  <meta name="og:image" content="https://christyc1129.github.io/startbootstrap-grayscale/slider/S/S1.jpg">
   <meta name="og:site_name" content="Foul language dictionary">
   <meta name="og:type" content="website">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,8 +42,10 @@
   <!-- Turn for this template -->
 
 
-    <!-- Slider for this template -->
+  <!-- Slider for this template -->
   <link rel="stylesheet" type="text/css" href="css/slick.css" />
+
+
 </head>
 
 <body id="page-top">
@@ -159,7 +161,12 @@
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+            <div class="image-container">
+                <img class="img-fluid mb-3 mb-lg-0" src="img/10.jpg" height="100%">
+                <div class="after">
+                  <div class="center"><p style="font-size:30px"><b>Software used:</b></p><br>Adobe Illustrator<br>Adobe InDesign<br>Adobe Photoshop</div>
+                </div>
+              </div>
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
@@ -174,7 +181,7 @@
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
           <a href="img/popup/1.jpg" data-lightbox="image-1" data-title="My caption"><img src="img/popup/1.jpg"
-              height="400px"></a>
+              height="400px" title="Click to pop up and view in details!"></a>
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
@@ -194,7 +201,7 @@
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
           <a href="img/popup/2.jpg" data-lightbox="image-1" data-title="My caption"><img src="img/popup/3.jpg"
-              width="555px"></a>
+              width="555px" title="Click to pop up and view in details!"></a>
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
@@ -214,14 +221,14 @@
       <!-- Project Three Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-            <div id="flipbook">
-                <div style="background-image: url(img/slider/S/S1);"></div>
-                <div style="background-image: url(img/slider/S/S1);"></div>
-                <div style="background-image: url(img/slider/S/S1);"></div>
-                <div style="background-image: url(img/slider/S/S1);"></div>
-                <div class="hard"></div>
-                <div class="hard"></div>
-              </div>
+          <div id="flipbook">
+            <div style="background-image: url(img/slider/S/S1);"></div>
+            <div style="background-image: url(img/slider/S/S1);"></div>
+            <div style="background-image: url(img/slider/S/S1);"></div>
+            <div style="background-image: url(img/slider/S/S1);"></div>
+            <div class="hard"></div>
+            <div class="hard"></div>
+          </div>
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
@@ -260,13 +267,44 @@
           background-size: cover;
           background-repeat: no-repeat;
         }
+
+        .image-container {
+          position: relative;
+          width: 700px;
+          height: 465px;
+        }
+
+        .image-container .after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 700px;
+          height: 465px;
+          display: none;
+          color: #FFF;
+        }
+
+        .image-container:hover .after {
+          display: block;
+          background: rgba(0, 0, 0, .6);
+        }
+
+        .center {
+          text-align: center;
+          padding: 160px 0;
+        }
       </style>
 
       <!-- Featured Project Row -->
       <div class="featured-project">
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+            <div class="image-container">
+              <img class="img-fluid mb-3 mb-lg-0" src="img/10.jpg" height="100%">
+              <div class="after">
+                <div class="center"><p style="font-size:30px"><b>Camera used:</b></p><br>Fujifilm Quick Snap<br>I'm Fine<br>Kodak Fun Saver<br>Cannon 100D</div>
+              </div>
+            </div>
           </div>
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
@@ -389,9 +427,8 @@
             }
           </style>
 
-          <iframe id="google-form"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSeE_U8zg4V6C-SJRDXm54LRw10MaDe8IC3tubkTbUsP59__2w/viewform?embedded=true"
-            width="640" height="623" marginheight="0" marginwidth="0">載入中…</iframe>
+          <iframe id="google-form" src="https://forms.gle/yWydjyrHxwcp1G946" width="640" height="623" marginheight="0"
+            marginwidth="0">Loading…</iframe>
 
         </div>
       </div>
@@ -410,7 +447,7 @@
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Address</h4>
               <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+              <div class="small text-black-50">V521, Hong Kong Polytechnic University</div>
             </div>
           </div>
         </div>
@@ -422,7 +459,7 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
+                <a href="#">cheungtszfei@yahoo.com.hk</a>
               </div>
             </div>
           </div>
@@ -434,7 +471,7 @@
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Phone</h4>
               <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
+              <div class="small text-black-50">+852 67729378</div>
             </div>
           </div>
         </div>
@@ -458,7 +495,7 @@
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Christy's &copy; Website 2019
+      Christy's &copy; Portfolio Website 2019
     </div>
   </footer>
 
