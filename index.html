@@ -101,7 +101,7 @@
             is the easiest foul language around the world.</p>
         </div>
       </div>
-      <img src="img/ipad.png" class="img-fluid" alt="">
+      <img src="img/bg2.png" class="img-fluid" alt="">
     </div>
   </section>
 
@@ -135,22 +135,29 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2 class="mb-4">This is a song for learning foul language.</h2>
-          <p>The cuss word song.
+          <h2 class="mb-4">About my University.</h2>
+          <p>More information about my university.
             <br><br />
             <div class="intro-video">
-              <iframe width="100%" src="https://www.youtube.com/embed/iZmqhQ8myGY" frameborder="0"
+              <iframe width="100%" src="https://www.youtube.com/embed/0Zu8SCgb-bY" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
-
+            <br>
+            <h2 class="mb-4">About myself.</h2>
+            <br>My daily life as an advertiising student at PolyU.
+            <br>
+            <br>
             <div class="slider">
-              <div><img src="slider/mf.jpg"></div>
-              <div><img src="slider/mf.jpg"></div>
-              <div><img src="slider/mf.jpg"></div>
+              <div><img src="img/slider/D/1"></div>
+              <div><img src="img/slider/D/2"></div>
+              <div><img src="img/slider/D/3"></div>
+              <div><img src="img/slider/D/4"></div>
+              <div><img src="img/slider/D/5"></div>
             </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -161,12 +168,15 @@
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
-            <div class="image-container">
-                <img class="img-fluid mb-3 mb-lg-0" src="img/10.jpg" height="100%">
-                <div class="after">
-                  <div class="center"><p style="font-size:30px"><b>Software used:</b></p><br>Adobe Illustrator<br>Adobe InDesign<br>Adobe Photoshop</div>
-                </div>
+          <div class="image-container">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/10.jpg" height="100%">
+            <div class="after">
+              <div class="center">
+                <p style="font-size:30px"><b>Software used:</b></p><br>Adobe Illustrator<br>Adobe InDesign<br>Adobe
+                Photoshop
               </div>
+            </div>
+          </div>
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
@@ -221,20 +231,13 @@
       <!-- Project Three Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-          <div id="flipbook">
-            <div style="background-image: url(img/slider/S/S1);"></div>
-            <div style="background-image: url(img/slider/S/S1);"></div>
-            <div style="background-image: url(img/slider/S/S1);"></div>
-            <div style="background-image: url(img/slider/S/S1);"></div>
-            <div class="hard"></div>
-            <div class="hard"></div>
-          </div>
-        </div>
+          <iframe style="width:555px;height:450px" src="https://online.fliphtml5.com/fbein/ymch/" seamless="seamless"
+            scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe> </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Anatomy of Type</h4>
+                <h4 class="text-white">Family Booklet</h4>
                 <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else,
                   along with a description.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
@@ -302,7 +305,10 @@
             <div class="image-container">
               <img class="img-fluid mb-3 mb-lg-0" src="img/10.jpg" height="100%">
               <div class="after">
-                <div class="center"><p style="font-size:30px"><b>Camera used:</b></p><br>Fujifilm Quick Snap<br>I'm Fine<br>Kodak Fun Saver<br>Cannon 100D</div>
+                <div class="center">
+                  <p style="font-size:30px"><b>Camera used:</b></p><br>Fujifilm Quick Snap<br>I'm Fine<br>Kodak Fun
+                  Saver<br>Cannon 100D
+                </div>
               </div>
             </div>
           </div>
@@ -611,6 +617,33 @@
           return '<button><span>' + (index + 1) + '</span></button>';
         }
       });
+    });
+
+
+    $('.center-slider').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
     });
   </script>
 
