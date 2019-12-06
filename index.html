@@ -54,7 +54,8 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/icon2.png" height="30px"> Christy's Studio</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/icon2.png" height="30px"> Christy's
+        Studio</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -64,10 +65,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Introduction</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#introduction">About Me</a>
+            <a class="nav-link js-scroll-trigger" href="#introduction">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
@@ -113,7 +117,7 @@
 
     .intro-video {
       position: relative;
-      width: 100%;
+      width: 700px;
       padding-top: 56.25%;
       display: block;
     }
@@ -121,13 +125,68 @@
     .intro-video iframe {
       position: absolute;
       top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      left: 200px;
+      width: 700px;
+      height: 450px;
     }
 
     .slider img {
       max-width: 100%;
+    }
+  </style>
+
+  <style>
+    #education {
+      padding: 50px 15px 20px 15px;
+      border-bottom: 1px solid #dcd9d9;
+      text-align: center
+    }
+
+    .education-section {
+      padding: 1rem 0 0;
+    }
+
+    #education h2 {
+      color: #374054;
+      margin-bottom: 50px
+    }
+
+    .education-block {
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+      padding: 15px;
+      border: 1px solid #dcd9d9;
+      text-align: left
+    }
+
+    .education-block h3 {
+      font-weight: 500;
+      float: left;
+      margin: 0;
+      color: #374054
+    }
+
+    .education-block span {
+      color: #74808a;
+      float: right
+    }
+
+    .education-block h4 {
+      color: #74808a;
+      clear: both;
+      font-weight: 500;
+      margin: 0 0 15px 0
+    }
+
+    .education-block p,
+    .education-block ul {
+      margin: 0;
+      color: #74808a;
+      font-size: 0.9em
+    }
+
+    .education-block ul {
+      padding: 0 0 0 15px
     }
   </style>
 
@@ -136,6 +195,61 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
+          <h2 class="mb-4">About myself.</h2>
+          <br>My daily life as an advertiising student at PolyU.
+          <br>
+          <br>
+          <div class="slider">
+            <div><img src="img/slider/D/1"></div>
+            <div><img src="img/slider/D/2"></div>
+            <div><img src="img/slider/D/3"></div>
+            <div><img src="img/slider/D/4"></div>
+            <div><img src="img/slider/D/5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section text-center bg-light" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <div id="education">
+            <h2 class="heading">Education</h2>
+            <div class="education-block">
+              <h3>Hong Kong Polytechnic University</h3>
+              <span class="education-date">Sept 2018 - Sept 2022</span>
+              <h4>BA(Hons) Scheme in Advertising Design</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet
+                urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi
+                dapibus porta quam laoreet placerat.
+              </p>
+            </div>
+            <!-- End .education-block -->
+
+            <div class="education-block">
+              <h3>St. Rose of Lima's College</h3>
+              <span class="education-date">Sept 2011 - Sept 2018</span>
+              <h4>Major in Economics, Physics and ICT</h4>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+              </ul>
+            </div>
+            <!-- End .education-block -->
+          </div>
+          <br>
           <h2 class="mb-4">About my University.</h2>
           <p>More information about my university.
             <br><br />
@@ -144,18 +258,8 @@
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
+            <!-- End #education -->
             <br>
-            <h2 class="mb-4">About myself.</h2>
-            <br>My daily life as an advertiising student at PolyU.
-            <br>
-            <br>
-            <div class="slider">
-              <div><img src="img/slider/D/1"></div>
-              <div><img src="img/slider/D/2"></div>
-              <div><img src="img/slider/D/3"></div>
-              <div><img src="img/slider/D/4"></div>
-              <div><img src="img/slider/D/5"></div>
-            </div>
         </div>
       </div>
     </div>
@@ -165,6 +269,9 @@
   <!-- Projects Section -->
   <section id="projects" class="projects-section bg-light">
     <div class="container">
+        <div class="project-center">
+            <p style="font-size:35px">Projects</p><br>
+          </div>
 
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -296,6 +403,10 @@
         .center {
           text-align: center;
           padding: 160px 0;
+        }
+
+        .project-center {
+          text-align: center;
         }
       </style>
 
@@ -606,6 +717,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
+
 
   <script type="text/javascript">
     $(document).ready(function () {
