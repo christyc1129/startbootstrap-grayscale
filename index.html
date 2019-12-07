@@ -29,7 +29,7 @@
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Cinzel|Josefin+Sans&display=swap" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
@@ -86,6 +86,10 @@
   </nav>
 
   <style>
+    .css-selector {
+      font-family: 'Bebas Neue', cursive;
+    }
+
     #lead-down {
       position: absolute;
       left: 0;
@@ -100,7 +104,7 @@
     #lead-down span {
       cursor: pointer;
       display: block;
-      
+
     }
 
     #lead-down i {
@@ -122,7 +126,6 @@
         transform: scale(1, 1)
       }
     }
-
   </style>
 
   <!-- Header -->
@@ -137,9 +140,9 @@
     </div>
     <div id="lead-down">
       <span>
-          <a class="nav-link js-scroll-trigger" href="#about">
-            <i class="fa fa-chevron-down fa-3x" aria-hidden="true" id="lead-down i"></i>
-          </a>
+        <a class="nav-link js-scroll-trigger" href="#about">
+          <i class="fa fa-chevron-down fa-3x" aria-hidden="true" id="lead-down i"></i>
+        </a>
       </span>
     </div>
   </header>
@@ -149,10 +152,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Who am I?</h2>
-          <p class="text-white-50">This site is a free online foul language dictionary. Lets begin with
-            <a href="https://www.urbandictionary.com/define.php?term=fuck%20you">the most common word-fuck you</a>. It
-            is the easiest foul language around the world.</p>
+          <h2 class="text-white mb-4">Nice to meet you!</h2>
+          <p class="text-white-50">My name is <a href="#about">Christy Cheung</a> and welcome to my portfolio website.
+            This website is designed to introduce myself as an advertising designer. Displayed projects are my personal
+            work and course work when I am studying
+            <a href="https://www.sd.polyu.edu.hk/en/study-detail/advertising-design">advertising design at PolyU</a>.
+            Hope you like my work and the design of this website!</p>
         </div>
       </div>
       <img src="img/bg2.png" class="img-fluid" alt="">
@@ -242,6 +247,20 @@
       border: 4px solid #64a19d;
     }
 
+    .left-line {
+      border-left: 20px solid #64a19d;
+      margin-left: 370px;
+      padding-left: 30px;
+      text-align: left;
+    }
+
+    .bottom-line {
+      border-bottom: 2px solid #64a19d;
+      width: 10%;
+      margin-left: 490px;
+      text-align: center;
+    }
+
     .project-title {
       color: #172c31;
       font-size: 40px;
@@ -281,7 +300,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2 class="mb-4">About myself.</h2>
+          <div style="font-family: 'Bebas Neue', cursive;" class="left-line">
+            <p style="font-size: 60px ">About Myself</p>
+          </div>
           <br>My daily life as an advertiising student at PolyU.
           <br>
           <br>
@@ -293,8 +314,11 @@
             <div><img src="img/slider/D/5"></div>
           </div>
           <div id="skills">
-            <h2 class="heading">Skills</h2>
+            <div style="font-family: 'Josefin Sans', sans-serif;" class="bottom-line">
+              <p style="font-size: 35px">Skills</p>
+            </div>
             <ul>
+              <br>
               <li>Adobe Photoshop</li>
               <li>Adobe Illustrator</li>
               <li>Adobe InDesign</li>
@@ -330,7 +354,9 @@
           <div id="education">
             <div class="line"></div>
             <br>
-            <h2 class="heading">Education</h2>
+            <div style="font-family: 'Bebas Neue', cursive;">
+              <p style="font-size: 60px">Education</p>
+            </div>
             <div class="education-block">
               <h3>Hong Kong Polytechnic University</h3>
               <span class="education-date">Sept 2018 - Sept 2022</span>
@@ -385,7 +411,9 @@
     <div class="container">
       <div class="project-center">
         <div class="project-title">
-          <p>Projects</p>
+          <div style="font-family: 'Bebas Neue', cursive;">
+            <p style="font-size: 60px">Projects</p>
+          </div>
         </div><br>
       </div>
 
@@ -724,7 +752,28 @@
       </div>
     </div>
   </section>
+  <style>
+    .top span {
+      cursor: pointer;
+      display: block;
+      text-align: center;
+    }
 
+    #top-up {
+      animation: pulsate 1.5s ease;
+      animation-iteration-count: infinite;
+      padding-top: 5px
+    }
+
+    .top i {
+      color: #74808a
+    }
+
+    .top-center {
+      padding-left: 790px;
+
+    }
+  </style>
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
@@ -734,7 +783,24 @@
     <audio controls autoplay loop src="audio/Ghost Of You Lyrics.mp3">
       Your browser does not support the audio element.
     </audio>
+    <br>
+    <div class="col-sm-2 top">
+      <span id="to-top">
+        <div class="top-center">
+        <a class="nav-link js-scroll-trigger" href="#page-top">
+          <i class="fa fa-chevron-up fa-3x" aria-hidden="true" id="top-up"></i>
+        </a>
+        </div>
+      </span>
+    </div>
+    Back to top
+    <br>
   </footer>
+
+
+
+
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
