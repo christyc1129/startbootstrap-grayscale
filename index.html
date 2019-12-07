@@ -36,6 +36,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 
   <!-- Pop up for this template -->
   <link href="lightbox2-2.11.1/dist/css/lightbox.css" rel="stylesheet" />
@@ -84,6 +85,46 @@
     </div>
   </nav>
 
+  <style>
+    #lead-down {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+      bottom: 15px;
+      color: #fff
+    }
+
+    #lead-down span {
+      cursor: pointer;
+      display: block;
+      
+    }
+
+    #lead-down i {
+      animation: pulsate 1.5s ease;
+      animation-iteration-count: infinite;
+      padding-top: 5px
+    }
+
+    @keyframes pulsate {
+      0% {
+        transform: scale(1, 1)
+      }
+
+      50% {
+        transform: scale(1.2, 1.2)
+      }
+
+      100% {
+        transform: scale(1, 1)
+      }
+    }
+
+  </style>
+
   <!-- Header -->
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
@@ -92,6 +133,14 @@
         <h2 class="text-white-50 mx-auto mt-2 mb-5">Advertising Design Student at PolyU</h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">Get to know me.</a>
       </div>
+    </div>
+    </div>
+    <div id="lead-down">
+      <span>
+          <a class="nav-link js-scroll-trigger" href="#about">
+            <i class="fa fa-chevron-down fa-3x" aria-hidden="true" id="lead-down i"></i>
+          </a>
+      </span>
     </div>
   </header>
 
@@ -197,6 +246,34 @@
       color: #172c31;
       font-size: 40px;
     }
+
+    #skills {
+      padding: 50px 15px;
+      text-align: center
+    }
+
+    #skills h2 {
+      color: #374054;
+      margin-bottom: 50px
+    }
+
+    #skills ul {
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      max-width: 800px
+    }
+
+    #skills li {
+      display: inline-block;
+      margin: 7px;
+      padding: 5px 10px;
+      color: #374054;
+      background: #e4e4ea;
+      list-style: none;
+      cursor: default;
+      font-size: 1.2em
+    }
   </style>
 
   <!-- Introduction Section -->
@@ -215,6 +292,30 @@
             <div><img src="img/slider/D/4"></div>
             <div><img src="img/slider/D/5"></div>
           </div>
+          <div id="skills">
+            <h2 class="heading">Skills</h2>
+            <ul>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe InDesign</li>
+              <li>Adobe After Effects</li>
+              <li>Adobe Dreamweaver</li>
+              <li>IMovie</li>
+              <li>WebDesign</li>
+              <li>Javascript</li>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>Photography</li>
+              <li>Film Camera</li>
+              <li>Fuji Film</li>
+              <li>I'm Fine</li>
+              <li>Koodak FunSaver</li>
+              <li>DSLR</li>
+              <li>Cannon 100D</li>
+              <li>Script Writing</li>
+            </ul>
+          </div>
+          <!-- End #skills -->
         </div>
       </div>
     </div>
@@ -631,8 +732,8 @@
     </div>
     <br>
     <audio controls autoplay loop src="audio/Ghost Of You Lyrics.mp3">
-        Your browser does not support the audio element.
-      </audio>
+      Your browser does not support the audio element.
+    </audio>
   </footer>
 
   <!-- Bootstrap core JavaScript -->
