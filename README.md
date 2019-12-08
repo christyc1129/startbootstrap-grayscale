@@ -1,3 +1,21 @@
+Commits hashes:
+
+#cd22eca Pop-up images at Project section
+#18c37a4 Testing with Turn.js and NYTimes flipper
+#8f39462 Overlay image at Project section, adding tooltip for pop-up images
+#bd8f287 Changing background image
+#8c42d5f Embedding Flip.html, testing with other sliders
+#6641fda Adding icon at Browser tab and header
+#0075bb8 CHanging background image
+#810e671 Changing colour tone for whole website, Adding Education section
+#0560c29 Adding background music
+#190de63 Adding Skills part at Introduction section, Adding lead-down animated button
+#aa1d82d Changing fonts, adding contents, adding decorative lines, adding back to top button
+#22d83ff Testing with the autoplay function of background music
+#4689c0b Social Network Preview
+
+
+
 # [Start Bootstrap - Grayscale](https://startbootstrap.com/template-overviews/grayscale/)
 
 [Grayscale](http://startbootstrap.com/template-overviews/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
